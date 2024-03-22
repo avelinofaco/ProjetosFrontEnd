@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* .botaoplay{
+    height: 20px;
+    width: 20px;
+} */
+
+body{
+    background-image: linear-gradient( 
+        rgb(128, 98, 75),
+        rgb(37, 23, 11)) ;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caixinha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0 1em 0;
+}
+
+#playlist-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:1em 0 4em 0;
+}
+
+#music-name{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#banda-name{
+    font-size: 0.8em;
+    color: rgb(219, 185, 141);
+}
+#button-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* aqui é o elemento button sem classe por isso nao se usa um ponto antes*/
+button{
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+/* aqui o elemento button é uma classe */
+.button{
+    font-size:17px;
+    cursor: pointer;
+}
+
+.button-avance-volte{
+    font-size: 27px;
+}
+
+.button-maior{
+    font-size: 35px;
+}
+
+#cover{
+    height: 300px;
+    width: 450px;
+
+    border-radius: 10px;
+}
+#like{
+    color: rgb(219, 185, 141);
+}
+
+#progress{
+    background-color:  rgb(32, 28, 28);
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#curent-progress{
+    --progress: 0%; /*maneira de declarar uma variavel no css*/
+    background-color: white;
+    height: inherit;
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progress-container{
+    padding-bottom: 1em;
+}
+
+.button-active{
+    color: rgb(6, 235, 6);
+}
+
+#time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+}
+
