@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="music-conteiner">
+        <h3 id="playlist-title">Playlist hashtag</h3>
+        <audio id="audio"></audio>
+        <img id="cover" alt="Disc cover">
+        <div id="caixinha">
+            <div id="conteudos">
+                <div id="music-name">Nome da musica</div>
+                <div id="banda-name">Nome da banda</div>
+            </div>
+            <button id="like" class="button"><i class="bi bi-heart"></i></button>
+        </div>
+        <div id="progress-container">
+            <div id="progress">
+                <div id="curent-progress"></div>
+            </div>
+            <div id="time-box">
+                <div id="song-time">00:00:00</div>
+                <div id="total-time">00:00:00</div>
+            </div>
+        </div>
+        <!-- <img class="botaoplay" src="botaoplay.jpg" > -->
+        <div id="button-conteiner">
+            <button id="shuffle" class="button"><i class="bi bi-shuffle"></i></button>
+            <button id="previous" class="button button-avance-volte"><i
+                    class="bi bi-skip-start-circle-fill"></i></button>
+            <button id="play" class="button button-maior"><i class="bi bi-play-circle-fill"></i></button>
+            <button id="next" class="button button-avance-volte"><i class="bi bi-skip-end-circle-fill"></i></button>
+            <button id="repeat" class="button"><i class="bi bi-arrow-repeat"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
